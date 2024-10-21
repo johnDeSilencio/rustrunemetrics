@@ -18,7 +18,7 @@ pub struct SkillValue {
 
     // #[serde(deserialize_with = "parse_rank")]
     pub rank: Option<u32>,
-    pub xp: u32,
+    pub xp: u64,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -32,10 +32,10 @@ pub struct PlayerProfile {
     pub logged_in: bool,
 
     #[serde(rename = "magic")]
-    pub magic_xp: u32,
+    pub magic_xp: u64,
 
     #[serde(rename = "melee")]
-    pub melee_xp: u32,
+    pub melee_xp: u64,
     pub name: String,
 
     #[serde(rename = "questscomplete")]
@@ -48,7 +48,7 @@ pub struct PlayerProfile {
     pub quests_started: Option<u32>,
 
     #[serde(rename = "ranged")]
-    pub ranged_xp: u32,
+    pub ranged_xp: u64,
 
     #[serde(deserialize_with = "parse_rank")]
     pub rank: Option<u32>,
@@ -60,7 +60,7 @@ pub struct PlayerProfile {
     pub total_skill: u32,
 
     #[serde(rename = "totalxp")]
-    pub total_xp: u32,
+    pub total_xp: u64,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
