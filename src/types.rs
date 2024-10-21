@@ -3,76 +3,76 @@ use serde::{Deserialize, Serialize};
 use chrono::{DateTime, Utc};
 
 #[derive(Debug, Deserialize, Serialize)]
-struct Activity {
-    date: DateTime<Utc>,
-    details: String,
-    text: String,
+pub struct Activity {
+    pub date: DateTime<Utc>,
+    pub details: String,
+    pub text: String,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-struct SkillValue {
-    id: Skill,
-    level: u32,
-    rank: u32,
-    xp: u32,
+pub struct SkillValue {
+    pub id: Skill,
+    pub level: u32,
+    pub rank: u32,
+    pub xp: u32,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-struct PlayerProfile {
-    activities: Vec<Activity>,
+pub struct PlayerProfile {
+    pub activities: Vec<Activity>,
 
     #[serde(rename = "combatlevel")]
-    combat_level: u32,
+    pub combat_level: u32,
 
     #[serde(rename = "loggedIn")]
-    logged_in: bool,
+    pub logged_in: bool,
 
     #[serde(rename = "magic")]
-    magic_xp: u32,
+    pub magic_xp: u32,
 
     #[serde(rename = "melee")]
-    melee_xp: u32,
-    name: String,
+    pub melee_xp: u32,
+    pub name: String,
 
     #[serde(rename = "questscomplete")]
-    quests_complete: u32,
+    pub quests_complete: u32,
 
     #[serde(rename = "questsnotstarted")]
-    quests_not_started: u32,
+    pub quests_not_started: u32,
 
     #[serde(rename = "questsstarted")]
-    quests_started: u32,
+    pub quests_started: u32,
 
     #[serde(rename = "ranged")]
-    ranged_xp: u32,
-    rank: u32,
+    pub ranged_xp: u32,
+    pub rank: u32,
 
     #[serde(rename = "skillvalues")]
-    skill_values: Vec<SkillValue>,
+    pub skill_values: Vec<SkillValue>,
 
     #[serde(rename = "totalskill")]
-    total_skill: u32,
+    pub total_skill: u32,
 
     #[serde(rename = "total_xp")]
-    total_xp: u32,
+    pub total_xp: u32,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-struct PlayerQuestStatus {
-    difficulty: u32,
-    members: bool,
+pub struct PlayerQuestStatus {
+    pub difficulty: u32,
+    pub members: bool,
 
     #[serde(rename = "questPoints")]
-    quest_points: u32,
-    status: QuestStatus,
-    title: String,
+    pub quest_points: u32,
+    pub status: QuestStatus,
+    pub title: String,
 
     #[serde(rename = "userEligible")]
-    user_eligible: bool,
+    pub user_eligible: bool,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-enum Skill {
+pub enum Skill {
     Attack,
     Defence,
     Strength,
@@ -105,7 +105,7 @@ enum Skill {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-enum QuestStatus {
+pub enum QuestStatus {
     Completed,
     Started,
     NotStarted,
