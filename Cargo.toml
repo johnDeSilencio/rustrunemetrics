@@ -3,6 +3,10 @@ name = "rustrunemetrics"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "rustrunemetrics"
+path = "src/lib.rs"
+
 [dependencies]
 anyhow = "1.0.90"
 chrono = { version = "0.4.38", features = ["serde"] }
