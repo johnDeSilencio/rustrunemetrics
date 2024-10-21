@@ -6,7 +6,7 @@ const BASE_API_URL: &str = "https://apps.runescape.com/runemetrics";
 const PROFILE_API_URL: &str = formatcp!("{BASE_API_URL}/profile/profile");
 const QUESTS_API_URL: &str = formatcp!("{BASE_API_URL}/quests");
 
-fn get_profile(player_name: String) -> Result<PlayerProfile> {
+pub fn get_profile(player_name: String) -> Result<PlayerProfile> {
     let player_profile: PlayerProfile =
         ureq::get(format!("{PROFILE_API_URL}?user={player_name}").as_str())
             .call()?
@@ -15,7 +15,7 @@ fn get_profile(player_name: String) -> Result<PlayerProfile> {
     Ok(player_profile)
 }
 
-fn get_quests(player_name: String) -> Result<Vec<PlayerQuestStatus>> {
+pub fn get_quests(player_name: String) -> Result<Vec<PlayerQuestStatus>> {
     let player_quest_status: Vec<PlayerQuestStatus> =
         ureq::get(format!("{QUESTS_API_URL}?user={player_name}").as_str())
             .call()?
