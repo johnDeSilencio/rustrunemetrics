@@ -113,8 +113,13 @@ pub enum Skill {
 
 #[derive(Debug, Deserialize, Serialize)]
 pub enum QuestStatus {
+    #[serde(rename = "COMPLETED")]
     Completed,
+
+    #[serde(rename = "STARTED")]
     Started,
+
+    #[serde(rename = "NOT_STARTED")]
     NotStarted,
 }
 
