@@ -1,6 +1,7 @@
-use serde::{Deserialize, Serialize};
-
-use chrono::{DateTime, Utc};
+use chrono::{DateTime, NaiveDateTime, Utc};
+use serde::{Deserialize, Deserializer, Serialize};
+use serde_repr::{Deserialize_repr, Serialize_repr};
+use std::str::FromStr;
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Activity {
@@ -71,9 +72,10 @@ pub struct PlayerQuestStatus {
     pub user_eligible: bool,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize_repr, Serialize_repr)]
+#[repr(u8)]
 pub enum Skill {
-    Attack,
+    Attack = 0,
     Defence,
     Strength,
     Constitution,
