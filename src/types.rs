@@ -44,8 +44,8 @@ pub struct PlayerProfile {
     #[serde(rename = "questsnotstarted")]
     pub quests_not_started: u32,
 
-    #[serde(rename = "questsstarted")]
-    pub quests_started: u32,
+    #[serde(rename = "queststarted")]
+    pub quests_started: Option<u32>,
 
     #[serde(rename = "ranged")]
     pub ranged_xp: u32,
@@ -59,7 +59,7 @@ pub struct PlayerProfile {
     #[serde(rename = "totalskill")]
     pub total_skill: u32,
 
-    #[serde(rename = "total_xp")]
+    #[serde(rename = "totalxp")]
     pub total_xp: u32,
 }
 
