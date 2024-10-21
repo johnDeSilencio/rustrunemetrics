@@ -12,7 +12,7 @@ anyhow = "1.0.90"
 chrono = { version = "0.4.38", features = ["serde"] }
 const_format = "0.2.33"
 serde = { version = "1.0.210", features = ["derive"] }
-strum = { version = "0.26.3", features = ["derive"] }
+serde_repr = "0.1.19"
 ureq = { version = "2.10.1", features = ["json"] }
 
 [dev-dependencies]
