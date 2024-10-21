@@ -1,6 +1,6 @@
-# gorunemetrics
+# rustrunemetrics
 
-A Golang package to interact with the RuneMetrics API.
+A ~~Golang~~ Rust package to interact with the RuneMetrics API.
 
 ## Examples
 
