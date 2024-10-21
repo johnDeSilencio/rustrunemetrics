@@ -15,11 +15,11 @@ pub fn get_profile(player_name: String) -> Result<PlayerProfile> {
     Ok(player_profile)
 }
 
-pub fn get_quests(player_name: String) -> Result<Vec<PlayerQuestStatus>> {
-    let player_quest_status: Vec<PlayerQuestStatus> =
+pub fn get_quests(player_name: String) -> Result<PlayerQuests> {
+    let player_quests: PlayerQuests =
         ureq::get(format!("{QUESTS_API_URL}?user={player_name}").as_str())
             .call()?
             .into_json()?;
 
-    Ok(player_quest_status)
+    Ok(player_quests)
 }
