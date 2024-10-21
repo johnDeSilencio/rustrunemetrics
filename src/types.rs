@@ -116,7 +116,7 @@ pub enum Skill {
     Necromancy,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, PartialEq, Eq, Deserialize, Serialize)]
 pub enum QuestStatus {
     #[serde(rename = "COMPLETED")]
     Completed,
