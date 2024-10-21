@@ -64,6 +64,11 @@ pub struct PlayerProfile {
 }
 
 #[derive(Debug, Deserialize, Serialize)]
+pub struct PlayerQuests {
+    pub quests: Vec<PlayerQuestStatus>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
 pub struct PlayerQuestStatus {
     pub difficulty: u32,
     pub members: bool,
