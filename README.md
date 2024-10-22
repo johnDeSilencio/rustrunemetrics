@@ -1,5 +1,7 @@
 # rustrunemetrics
 
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+
 > **DISCLAIMER**: I wrote this a proof of concept to try and show my coworker
 > what a Rust port of a Golang package would look like. This crate is **not**
 > suitable for production use. See the [License](#license) section below for
