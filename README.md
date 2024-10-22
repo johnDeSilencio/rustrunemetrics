@@ -31,7 +31,8 @@ The following assumes that you have
 cargo run --example is_max -- --player-name "the-player-you-are-interested-in"
 ```
 
-For example,
+For example, to query skills information for the player
+[`its dave`](https://apps.runescape.com/runemetrics/app/overview/player/its%20dave)
 
 ```bash
 cargo run --example is_max -- --player-name "its dave"
@@ -47,7 +48,8 @@ cargo run --example is_max -- --player-name "its dave"
 cargo run --example unlocked_quests -- --player-name "the-player-you-are-interested-in"
 ```
 
-For example,
+For example, to query quest information for the player
+[`its dave`](https://apps.runescape.com/runemetrics/app/overview/player/its%20dave)
 
 ```bash
 cargo run --example unlocked_quests -- --player-name "its dave"
