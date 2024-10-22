@@ -1,9 +1,9 @@
 # rustrunemetrics
 
-**DISCLAIMER**: I wrote this a proof of concept to try and show my coworker what
-a Rust port of a Golang package would look like. This crate is **not** suitable
-for production use. See the [License](#license) section below for more
-information.
+> **DISCLAIMER**: I wrote this a proof of concept to try and show my coworker
+> what a Rust port of a Golang package would look like. This crate is **not**
+> suitable for production use. See the [License](#license) section below for
+> more information.
 
 ---
 
