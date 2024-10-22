@@ -37,8 +37,6 @@ For example,
 cargo run --example is_max -- --player-name "its dave"
 ```
 
-prints out
-
 ```none
 "its dave" has maxed. Way to go its dave!
 ```
