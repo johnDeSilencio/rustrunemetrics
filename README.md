@@ -1,6 +1,7 @@
 # rustrunemetrics
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+![Nix](https://img.shields.io/badge/NIX-5277C3.svg?style=for-the-badge&logo=NixOS&logoColor=white)
 
 > **DISCLAIMER**: I wrote this a proof of concept to try and show my coworker
 > what a Rust port of a Golang package would look like. This crate is **not**
