@@ -31,10 +31,59 @@ The following assumes that you have
 cargo run --example is_max -- --player-name "the-player-you-are-interested-in"
 ```
 
+For example,
+
+```bash
+cargo run --example is_max -- --player-name "its dave"
+```
+
+prints out
+
+```none
+"its dave" has maxed. Way to go its dave!
+```
+
 ### Check what quests the user has unlocked but not yet completed
 
 ```bash
 cargo run --example unlocked_quests -- --player-name "the-player-you-are-interested-in"
+```
+
+For example,
+
+```bash
+cargo run --example unlocked_quests -- --player-name "its dave"
+```
+
+```none
+"its dave" can complete the following unlocked free quests:
+
+  - Benedict's World Tour (miniquest)
+  - Field of Screams
+  - Great Egg-spectations
+  - Heartstealer
+  - It's Snow Bother
+  - Violet is Blue Too
+
+"its dave" can complete the following unlocked members quests:
+
+  - Dimension of Disaster
+  - Dimension of Disaster: Defender of Varrock
+  - Dead and Buried
+  - Desperate Creatures
+  - Dimension of Disaster: Demon Slayer
+  - Dimension of Disaster: Shield of Arrav
+  - Housing of Parliament
+  - My One and Only Lute
+  - Osseous Rex
+  - Soul Searching
+  - That Old Black Magic
+  - The General's Shadow (miniquest)
+  - Tortle Combat (miniquest)
+  - Twilight of the Gods
+  - Wandering Ga'al (miniquest)
+
+Get to work its dave!
 ```
 
 ## Nix Users
